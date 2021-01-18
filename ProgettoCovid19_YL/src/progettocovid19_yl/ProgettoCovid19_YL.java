@@ -44,7 +44,8 @@ public class ProgettoCovid19_YL {
                     "1- Nuovo paziente\n"
                     + "2- Cerca cartella clinica tramite cidice fiscale\n"
                     + "3- Cancella paziente\n"
-                    + "4- Lista e numero pazienti\n"));
+                    + "4- Lista e numero pazienti\n"
+                    + "0- Exit"));
             switch (scelta) {
                 case 1:
                     // insertion of data by user
@@ -136,7 +137,11 @@ public class ProgettoCovid19_YL {
                     }
                     JOptionPane.showMessageDialog(null, "Numero totale pazienti : " + appCount);
                     break;
+                case 0:
+                    System.exit(scelta);
+                break;
             }
+            
         }while (scelta != 0);
     }
         
