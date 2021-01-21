@@ -28,9 +28,9 @@ public class ProgettoCovid19_YL {
         // support variable for insert of data type "BOOLEAN"
         boolean apptampon;
         // data decided by programmer just to make an example
-        vettPat.add(new Paziente("Mira", "Abba", "Dubai", "25/07/1993", "Milano", "13/03/2020", "15:33", "Canco allo stomaco", 30, 38, true, "BBAMRI93L65G388N", "3333333333"));
-        vettPat.add(new Paziente("Kaid", "Loli", "Istambul", "02/01/1970", "Codogno", "01/09/2020", "11:03", "Cadavere", 57, 45, true, " LLOKDA70A02G388C", "1111111111"));
-        vettPat.add(new Paziente("Clash", "Cancer", "Londra", "16/09/1985", "Pavia", "19/10/2020", "20:17", "Canco al corpo", 10, 70, true, "CNCCSH85P16F205G", "6666666666"));
+        vettPat.add(new Paziente("Mira", "Abba", "Dubai", "25/07/1993", "Milano", "13/03/2020", "15:33", "Difficoltà respiratorie", 30, 38, true, "BBAMRI93L65G388N", "3333333333"));
+        vettPat.add(new Paziente("Kaid", "Loli", "Istambul", "02/01/1970", "Codogno", "01/09/2020", "11:03", "Crisi polmonare", 57, 45, true, " LLOKDA70A02G388C", "1111111111"));
+        vettPat.add(new Paziente("Clash", "Cash", "Londra", "16/09/1985", "Pavia", "19/10/2020", "20:17", "Dolori alla gola/al petto", 10, 70, true, "CNCCSH85P16F205G", "6666666666"));
         // cycle for to view previous data
         for (int i = 0; i < vettPat.size(); i++) {
             // function call 
@@ -127,6 +127,16 @@ public class ProgettoCovid19_YL {
                     }
                     break;
                 case 4:
+                    /*
+                        public ArrayList<Paziente> vetPat(){
+                            Collections.sort(vetPat, new Comparator<Paziente>(){
+                            @Override
+                            public int compare(Paziente p1, Pazziente o2){
+                                    return (p1.getSurname()).compareTo(p2.Surname());
+                            }
+                        });	
+                        }
+                    */
                     Collections.sort(vettPat, (Paziente p1, Paziente p2) -> p1.getSurname().compareToIgnoreCase(p2.getSurname()));
                     int iCount;
                     int appCount = 0;
